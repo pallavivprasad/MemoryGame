@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Memory Game</string>
+    <string name="welcome_message">Welcome to Memory Game</string>
+    <string name="start">Start</string>
+    <string name="restart">Restart</string>
+    <string name="reveal">Reveal</string>
+    <string name="error_in_selection">Wrong Selection</string>
+    <string name="try_again">Try Again</string>
+    <string name="game_over">Game Over</string>
+    <string name="instruction">You will have 5 sec to memorise the numbers spot in the grid.
+        After 5 sec of time, the grid is masked, giving you the opportunity to remember and pick the correct spot. Enjoy!</string>
+    <string name="find_no">Find no  </string>
+    <string name="how_to_play">How to play</string>
+    <string name="game_starts_in">Game starts in</string>
+    <string name="sec">sec</string>
+</resources>

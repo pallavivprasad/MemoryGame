@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="5"
+    tools:context=".View.MainActivity"
+    android:background="@android:color/background_light">
+
+    <TextView
+        android:id="@+id/tv_app_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:textSize="@dimen/tv_large"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/activity_vertical_margin_xlarge"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_weight="2"
+        android:background="@color/colorLightGreen"
+        android:orientation="vertical"
+        android:id="@+id/ll_grid"
+        android:padding="@dimen/activity_horizontal_padding_small"
+        android:weightSum="3">
+
+        <!--grid 1st row-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/tv_grid_1"
+                style="@style/tv_grid_style"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                 />
+
+            <TextView
+                android:id="@+id/tv_grid_2"
+                style="@style/tv_grid_style"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="onClickGrid2" />
+
+            <TextView
+                android:id="@+id/tv_grid_3"
+                style="@style/tv_grid_style"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="onClickGrid3" />
+
+        </LinearLayout>
+
+        <!--grid 2nd row-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/tv_grid_11"
+                style="@style/tv_grid_style"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="onClickGrid11" />
+
+
+            <TextView
+                android:id="@+id/tv_grid_12"
+                style="@style/tv_grid_style"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/activity_vertical_margin_small"
+                android:layout_weight="1"
+                android:onClick="onClickGrid12" />
+
+
+            <TextView
+                android:id="@+id/tv_grid_13"
+                style="@style/tv_grid_style"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="onClickGrid13" />
+
+        </LinearLayout>
+
+        <!--grid 3rd row-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/tv_grid_21"
+                style="@style/tv_grid_style"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="onClickGrid21" />
+
+
+            <TextView
+                android:id="@+id/tv_grid_22"
+                style="@style/tv_grid_style"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="onClickGrid22" />
+
+
+            <TextView
+                android:id="@+id/tv_grid_23"
+                style="@style/tv_grid_style"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="onClickGrid23" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_marginLeft="@dimen/activity_vertical_margin_small"
+        android:layout_marginRight="@dimen/activity_horizontal_margin_small"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2">
+
+        <TextView
+            android:gravity="top|center_horizontal"
+            android:textSize="@dimen/tv_medium"
+            android:id="@+id/tv_no_to_guess"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+</LinearLayout>
